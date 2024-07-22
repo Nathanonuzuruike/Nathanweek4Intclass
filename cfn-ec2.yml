@@ -1,0 +1,27 @@
+Resources:
+  Server1:
+    Type: 'AWS::EC2::Instance'
+    Properties: 
+      InstanceType: t2.micro
+      ImageId: ami-04a81a99f5ec58529
+      Tags:
+        - Key: Name
+          Value: server1
+
+  Server2:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-04a81a99f5ec58529
+      Tags:
+        - Key: Name
+          Value: server2
+
+  Workstation:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-04a81a99f5ec58529
+      Tags:
+        - Key: Name
+          Value: workstation
